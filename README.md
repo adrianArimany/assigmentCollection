@@ -14,28 +14,28 @@ The structure of the code is as follows:
 
 /assigments                                  <- How you define the structure of the assigments is to your choise, although keep it simple     
   /extra
-    -example1
+    - example1
   
   /Formative
-    -formative1
+    - formative1
   
   /Homework
-    -homework1
+    - homework1
 
 /design                                      <- (optional) gives different designs to a assigments, is not mandatory to use. It also reduced the posibility of code leak between assigments.
-  -DesignA.tex                                    <- DesignA is just a top head indicating name, course, duedate, carnet, and title. Use this for assigments.
-  -DesignB.tex                                    <- DesignB doesn't have a header, use this for the appendix.     
+  - DesignA.tex                                    <- DesignA is just a top head indicating name, course, duedate, carnet, and title. Use this for assigments.
+  - DesignB.tex                                    <- DesignB doesn't have a header, use this for the appendix.     
 
 /sty                                         <- These are global enviroments/macros and so it can be used in any file.
-  -env-demonstraciones.sty                   <- Provides enviroments for the demonstracion which is equivalent to \proof
-  -env-problema.sty                          <- Provides enviroments to how problems are designed in any assigments
-  -environments.sty                          <- Controls which enviroment can be compiled, useful for debudding.
-  -macros.sty                                <- Personal macros to be used anywhere in the proyect
-  -packages.sty                              <- These are the packages being use in the proyect, any new package put them here to have them well organized.
-  -refsheet.sty                              <- Handles the internal reference process and counting for the enviroments in the appendix
+  - env-demonstraciones.sty                   <- Provides enviroments for the demonstracion which is equivalent to \proof
+  - env-problema.sty                          <- Provides enviroments to how problems are designed in any assigments
+  - environments.sty                          <- Controls which enviroment can be compiled, useful for debudding.
+  - macros.sty                                <- Personal macros to be used anywhere in the proyect
+  - packages.sty                              <- These are the packages being use in the proyect, any new package put them here to have them well organized.
+  - refsheet.sty                              <- Handles the internal reference process and counting for the enviroments in the appendix
 
 /z_figures                                   <- Here goes your plots
-  -plot.jpg                                    
+  - plot.jpg                                    
 
 main.tex                                     <- Where you specified which assigments are going to compile
 reference.bib                                <- Here goes your reference (currently not assigned to the main.tex)
