@@ -1,0 +1,54 @@
+\begin{assignment}{DesignA}
+\addcontentsline{toc}{chapter}{Formativa 1: conjuntos y logica}
+
+\duedate{Julio 15, 2025}
+\useDesignAactivate
+
+\subtitle{Relaciones y Órdenes}
+
+\begin{problema}
+$\forall A, \emptyset \subseteq A$
+\end{problema}
+\begin{demostracion}
+Considere que $A$ es un conjunto, por el Axioma 0, existe el $\emptyset$.
+
+Entonces por teorema del vació, tenemos que 
+
+$$
+\forall x , (x \notin \emptyset)
+$$
+es un enunciado es falso, lo que la implicación es verdadera. Entonces,
+$$
+\forall A (\emptyset \subseteq A)
+$$
+\end{demostracion}
+
+
+
+\begin{demostracion}[Intento de demostración (incorrecta)]
+Queremos demostrar que \( \forall A\,(\emptyset \subseteq A) \). \\
+
+Se afirma que por el teorema anterior, \( \forall x\, (x \notin \emptyset) \) es \textbf{falsa}.\\
+
+\textbf{(Error 1)}: En realidad, \( \forall x\, (x \notin \emptyset) \) es \emph{verdadera} por definición del conjunto vacío. \\
+
+Luego se dice que como la hipótesis es falsa, entonces la proposición 
+\[
+x \in \emptyset \Rightarrow x \in A
+\]
+es verdadera. \\
+
+\textbf{(Error 2)}: Aunque esta implicación es vacuamente verdadera, no se ha aplicado la definición de subconjunto, que es:
+\[
+\emptyset \subseteq A \iff \forall x\,(x \in \emptyset \Rightarrow x \in A)
+\]
+
+Además, no se justifica por qué esta proposición sería verdadera para \textbf{todo} \( A \).\\
+
+\textbf{(Error 3)}: No se construye una demostración lógica general que funcione para cualquier conjunto \( A \), y no se introduce explícitamente la cuantificación universal sobre \( A \).\\
+
+Por lo tanto, esta ``demostración'' no es válida. 
+\end{demostracion}
+
+
+\end{assignment}

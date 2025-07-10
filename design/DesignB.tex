@@ -1,0 +1,38 @@
+\newcommand{\leftColumnWidth}{0.48\textwidth}
+\newcommand{\rightColumnWidth}{0.48\textwidth}
+\newcommand{\columnGap}{0.04\textwidth}
+
+\newcommand{\useDesignB}{
+%
+% DesignB.tex
+\makeatletter
+\newgeometry{left=0.75in, right=0.75in, top=1in, bottom=1in}
+\setlength{\columnsep}{\columnGap}  % for future multicol use
+
+% --- Customizable section names (can be redefined in each .tex file) ---
+\providecommand{\axiomsectiontitle}{Axiomas}
+\providecommand{\definitionsectiontitle}{Definiciones}
+\providecommand{\refsheettoclabel}{Mini índice}
+
+% --- Mini Table of Contents (for axioms and definitions) ---
+\newcommand{\refminitoc}{%
+  \section*{\refsheettoclabel}
+  \subsection*{\axiomsectiontitle}
+  \axlist
+  \subsection*{\definitionsectiontitle}
+  \deflist
+}
+
+
+%\newenvironment{refsheetlayout}[1]{
+%  \section*{##1}%
+%  \begin{multicols}{2}%
+%    \small
+%}{%
+%  \end{multicols}
+%  \normalsize
+%}
+
+\makeatother
+
+}

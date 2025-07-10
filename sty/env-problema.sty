@@ -1,0 +1,7 @@
+\ProvidesPackage{sty/env-problema}
+
+\newcounter{problema}
+\newenvironment{problema}{
+  \refstepcounter{problema}
+  \textbf{Problema \theproblema:}
+}{\par\vspace{1em}}

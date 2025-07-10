@@ -1,0 +1,24 @@
+\makeatletter
+
+\@ifundefined{useDesignAsetup}{
+
+  \newcommand{\useDesignAsetup}{%
+    \def\duedate##1{\gdef\@duedate{##1}}%
+    \def\subtitle##1{%
+      \gdef\@assignmenttitle{##1}%
+      \begin{center}
+        \textbf{\Large ##1}
+      \end{center}
+      \vspace{1.5em}
+    }%
+  }
+
+  \newcommand{\useDesignAactivate}{%
+  \setassignmentmanualheader
+  \vspace{0.5em}
+  \noindent\rule{\textwidth}{0.5pt}  % horizontal line
+  }
+
+}{}
+
+\makeatother

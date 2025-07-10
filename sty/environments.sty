@@ -1,0 +1,13 @@
+\ProvidesPackage{sty/environments}
+
+% Load sub-environments
+\RequirePackage{sty/env-problema} 
+%These enviroment only used for how problems are defined
+
+
+%This is you don't want the compiler to load the demostracion enviroment
+\newif\ifcompiledemostracion
+\compiledemostraciontrue  % or \compiledemostracionfalse
+\RequirePackage{sty/env-demostracion}
+%These enviroment only used for proofs
+

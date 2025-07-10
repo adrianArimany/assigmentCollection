@@ -1,0 +1,18 @@
+\ProvidesPackage{sty/env-demostracion}
+
+%==== Only for a safetynet===
+\providecommand{\compiledemostraciontrue}{}
+\providecommand{\compiledemostracionfalse}{}
+\providecommand{\ifcompiledemostracion}{\iftrue}
+%==--------------------===
+\ifcompiledemostracion
+  \newenvironment{demostracion}[1][Demostración]{%
+    \par\noindent\textbf{#1.}\ }%
+  {\hfill$\blacksquare$\par\vspace{1em}}
+\else
+  \newenvironment{demostracion}[1][Demostración]{%
+    \expandafter\comment
+  }{%
+    \expandafter\endcomment
+  }
+\fi

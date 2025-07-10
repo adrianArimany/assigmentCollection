@@ -1,0 +1,27 @@
+\begin{assignment}{DesignB}
+
+\section*{Axiomas de Zermelo-Fraenkel}
+
+\twoColumn{
+
+  \begin{axiomprefix}{ZF}{Extensionalidad}{Extensionalidad}
+  $\forall x \ (x \in A \leftrightarrow x \in B) \Rightarrow A = B$
+  \end{axiomprefix}
+
+  \begin{axiomprefix}{ZF}{Separación}{Separación}
+  $\exists B \ \forall x \ (x \in B \leftrightarrow x \in A \land \varphi(x))$
+  \end{axiomprefix}
+
+}{
+  \begin{axiomprefix}{ZF}{Reemplazo}{Reemplazo}
+  $\forall x \in A \ \exists! y \ \varphi(x,y) \Rightarrow \exists B \ \forall y (y \in B \leftrightarrow \exists x \in A : \varphi(x,y))$
+  \end{axiomprefix}
+
+  \begin{axiomprefix}{ZF}{Potencia}{Potencia}
+  $\forall A \ \exists B \ \forall x (x \in B \leftrightarrow x \subseteq A)$
+  \end{axiomprefix}
+}
+
+\end{assignment}
+
+

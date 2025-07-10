@@ -1,0 +1,56 @@
+\begin{assignment}{DesignA}
+    
+
+\addcontentsline{toc}{chapter}{Extra 1: Fallacy with the Separation Axiom}
+\duedate{today}
+\useDesignAactivate
+\subtitle{Extra: Fallacy with the Separation Axiom}
+
+\begin{problema}
+Define the extension Axiom as:
+
+$$
+\exists B \forall x ( x\in B \leftrightarrow [x \in A \land \phi(x)]) 
+$$
+We will show that this version of the axiom is vulnerable to Russel Paradox.
+\begin{demostracion}
+In the defined extension axiom, the set $A$, is not universally define, this has the consequence that this $A$ must exist to "well-define" $\phi(x)$. Additionally, it requires that to construct set B, one must determine a good A first. 
+
+Consider the following case, where A is a no bounding set. Basically how naive set theory defines sets:
+$$
+A = \{x \mid \phi(x)\}
+$$
+
+Now let $\phi(x) := x \notin x$, so from the extension axiom:
+$$
+\forall R \forall x (x \in R \leftrightarrow x \notin x)
+$$
+
+Here R would be $R = \{ x \mid x \notin x \}$.\\ 
+
+So from Russel paradox, is $R \in R$? Which as we know leads to a double contradiction.\\
+
+How to fix this, use the following version for the separation axiom or subset axiom:
+
+$$
+\forall A \exists S \forall x (x \in S \leftrightarrow (x \in A \land \phi(x))
+$$
+
+Notice that here the set A is universally defined, so one can't simply take any set A. So suppose that
+
+$$
+\phi(x) := x \notin x
+$$
+
+Now let $A = {\emptyset}$, then 
+
+$$
+S = \{ x \in \{\emptyset\} \mid x \in x\}
+$$
+
+Notice that if $x = \emptyset$, then the statement $\emptyset \notin \emptyset$ is true, so $S = \{\emptyset\}$ 
+
+\end{demostracion}
+\end{problema}
+
+\end{assignment}
