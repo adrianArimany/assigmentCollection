@@ -7,10 +7,10 @@ Use this template to store multiple assigments from a course, and then preview y
 The structure of the code is as follows:
 
 /appendix                                    <- The .tex in the appendix are currently using a double coloumn design
-  -axioms.tex                       
-  -definitions.tex                   
-  -propositions.tex
-  -theorem.tex
+  - axioms.tex                       
+  - definitions.tex                   
+  - propositions.tex
+  - theorem.tex
 
 /assigments                                  <- How you define the structure of the assigments is to your choise, although keep it simple     
   /extra
