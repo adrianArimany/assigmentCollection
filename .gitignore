@@ -1,0 +1,5 @@
+# Ignore build artifacts
+assignments/Extra/
+assignments/Formative/
+assignments/Homework/
+*.log
