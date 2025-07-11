@@ -2,6 +2,12 @@
 
 Use this template to store multiple assigments from a course, and then preview your work in a single pdf, with integrated table of content and automatic hyperlinks.
 
+# Version
+
+Currently at version 0.1
+
+- The module is stable and it works, but key requirements are needed for improvements.
+
 ## Structure:
 
 The structure of the code is as follows:
